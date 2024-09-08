@@ -30,15 +30,15 @@ module.exports = () => {
         name: 'Text Editor',
         short_name: 'Editor',
         description: 'A text Editor',
-        //background_color: ?
+        background_color: '#225ca3',
+        theme_color: '#225ca3',
         start_url: './',
         publicpath: './',
         icons: [
           {
-            src: "./src/images/logo.png",
-            type: "image/png",
-            sizes: [192, 512],
-            purpose: "any maskable"
+            src: path.resolve('src/images/logo.png'),
+            sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join('assets', 'icons'),
           }
         ]
       })
